@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Bravo Vet</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- Navbar -->
+<div id="nav-placeholder"></div>
+
+  <!-- About Us -->
+  <section class="about">
+    <div class="container">
+      <h2>About Bravo Vet</h2>
+      <p>Bravo Vet Animal Clinic was founded with one mission in mind — to offer high-quality, compassionate veterinary care for pets in our community.</p>
+      
+      <p>Our experienced and dedicated team of veterinarians, nurses, and support staff are here to ensure your pets are cared for like family. From annual checkups to emergency care, our clinic is equipped with the latest medical technology to support your pet's well-being.</p>
+
+      <h3>Meet Our Team</h3>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Dr. Sarah Thompson" />
+          <h4>Dr. Sarah Thompson</h4>
+          <p>Lead Veterinarian</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Jane Miller" />
+          <h4>Jane Miller</h4>
+          <p>Veterinary Nurse</p>
+        </div>
+        <!-- Add more team members as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+        <p>Bravo Vet Animal Clinic — Your animal's Health is our Happiness</p>
+      <p>Open Mon–Sat | 📞 256 786834706 | 📍 Kampala, Uganda</p>
+    </div>
+  </footer>
+
+  <!-- External Navigation Script -->
+  <script>
+    fetch("nav.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.querySelector("#nav-placeholder").innerHTML = data;
+      })
+      .catch((error) => console.error("Error loading navigation:", error));
+  </script>
+</body>
+</html>

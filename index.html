@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bravo Vet Animal Clinic</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Bravo Vet Animal Clinic</h1>
+      <img src="logo bravo vet -Photoroom.png" alt="Bravo Vet Animal Clinic Transparent Logo" width="150" height="75" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#appointments">Appointments</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Your animal's Health is our Happiness</h2>
+      <p>Trusted Veterinary Services in Your Neighborhood</p>
+      <a href="#" class="btn-primary">Book an Appointment</a>
+    </div>
+  </section>
+
+  <!-- About Block -->
+  <section class="about">
+    <div class="container">
+      <h3>Welcome to Bravo Vet</h3>
+      <p>We're here to provide your furry friends with the best possible care in a loving environment. From checkups to emergencies, we’re your go-to clinic.</p>
+    </div>
+  </section>
+
+  <!-- Services Highlights -->
+  <section class="services">
+    <div class="container">
+      <h3>Our Services</h3>
+      <div class="service-grid">
+        <div class="service-card">General Checkups</div>
+        <div class="service-card">Vaccinations</div>
+        <div class="service-card">Emergency Care</div>
+        <div class="service-card">Pet Grooming</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Preview -->
+  <section class="testimonials">
+    <div class="container">
+      <h3>What Our Clients Say</h3>
+      <blockquote>
+        "Amazing care and super friendly staff. Our cat Milo actually enjoys going to the vet!"
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Footer / Contact Preview -->
+  <footer class="footer">
+    <div class="container">
+      <p>Bravo Vet Animal Clinic — Your animal's Health is our Happiness</p>
+      <p>Open Mon–Sat | 📞 256 786834706 | 📍 Kampala, Uganda</p>
+    </div>
+  </footer>
+
+  <!-- External Navigation Script -->
+  <script>
+    fetch("nav.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.querySelector("#nav-placeholder").innerHTML = data;
+      })
+      .catch((error) => console.error("Error loading navigation:", error));
+  </script>
+</body>
+</html>
